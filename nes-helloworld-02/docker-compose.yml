@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+      examples:
+            image: "fabiosoaza/snes-dev-tools:latest" 
+            command: /bin/bash -c "cd /tmp/hello-world2 && ./build.sh"
+            volumes: 
+                  - ./:/tmp/hello-world2
+  
