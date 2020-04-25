@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+      examples:
+            image: "fabiosoaza/snes-dev-tools:latest" 
+            command: /bin/bash -c "cd /tmp/nes-background-collision && ./build.sh"
+            volumes: 
+                  - ./:/tmp/nes-background-collision
+  
